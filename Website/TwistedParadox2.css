@@ -1,0 +1,163 @@
+ /* MAIN ELEMENTS */
+ body{
+    background-image: url("https://images.unsplash.com/photo-1570284613060-766c33850e00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJsdWV8ZW58MHx8MHx8&w=1000&q=80");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+    font-family: rubik,helvetica,arial,sans-serif;
+    font-size:11px;
+}
+
+a{
+    color:rgb(0, 0, 0);
+}
+/* IDS */
+#mainContainer{
+    background: rgb(39, 39, 39);
+    width:1100px;
+    height:auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:grid;
+    grid-template-columns: repeat(1, 700px);
+    grid-template-rows: repeat(3);
+}
+#welcomeBox{
+    float:left;
+    background-color: #001064;
+    width:900px;
+    height:200px;
+    border-radius: 2px;
+    border: 1px solid #4c57ac;
+    margin-left: 95px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    
+}
+#bigBox{
+    float:left;
+    background-color: #283593;
+    width:1000px;
+    height:auto;
+    border-radius: 2px;
+    padding-top: 20px;
+    border: 1px solid #4c57ac;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom:50px;
+}
+#bigBox2{
+    float:left;
+    background-color: #283593;
+    width:500px;
+    height:auto;
+    border-radius: 2px;
+    padding-top: 20px;
+    border: 1px solid #4c57ac;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom:50px;
+}
+#topBox{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:250px;
+    width: 1100px;
+    font-size:30px;
+}
+#navBar{
+    position:fixed;
+    height:100%;
+    width:100px;
+    overflow:hidden;
+    background-image: linear-gradient(rgb(71, 71, 255), rgb(0, 0, 0));
+    margin-top: -303px;
+    margin-left: -8px;
+    padding-top: 25px;
+    display:grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(1,100px);
+}
+/* CLASSES */
+.navBarS{
+    text-align: center;
+}
+.miniBox1{
+    float: left;
+    width:250px;
+    height:250px;
+    background: rgba(0, 16, 100, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size:18px;
+}
+.miniBox2{
+    float: left;
+    width:250px;
+    height:450px;
+    background: rgba(97, 98, 105, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size:25px;
+}
+.miniBox3{
+    float: left;
+    width:100px;
+    height:100px;
+    background: rgba(97, 98, 105, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-size:25px;
+}
+.miniBox4{
+    float: left;
+    width:100px;
+    height:100px;
+    background: rgba(97, 98, 105, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-size:25px;
+}
+.feint{
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.collide{
+    display:none;
+}
+/* HOVERS */
+.colorChange:hover{
+    animation-name:colorChange;
+    animation-duration: .25s;
+    animation-fill-mode:forwards;
+}
+.feint:hover{
+    animation-name:borderChange;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+/*  Animations    */
+@keyframes borderChange{
+    from {border: 3px solid black;}
+    to {border:3px solid white;}
+}
+@keyframes colorChange{
+    from{color:rgb(0, 0, 0);}
+    to{color: white;}
+}
